@@ -1,0 +1,7 @@
+DB_NAME=cloud-db
+DB_USER=cloud
+DB_PASSWORD=cloud-pass
+DB_ROOT_PASSWORD=jevon260826*
+TYPO3_ADMIN_USER=admin
+TYPO3_ADMIN_PASSWORD=jevon260826*
+TYPO3_ADMIN_EMAIL=admin@example.com
