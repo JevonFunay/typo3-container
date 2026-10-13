@@ -18,8 +18,7 @@ if [ ! -f "$SETTINGS" ]; then
     sleep 10
   done
 
-  # Site awal dibuat dengan base http://<IP>/. Diganti jadi "/" supaya website
-  # tetap jalan walaupun IP publik EC2 berubah (misal instance di-stop/start).
+
   for f in typo3conf/sites/*/config.yaml; do
     if [ -f "$f" ]; then
       sed -i 's#^base: .*#base: /#' "$f"
@@ -33,8 +32,6 @@ else
   echo "[typo3-init] TYPO3 sudah ter-install, skip setup"
 fi
 
-# file penanda instalasi pertama, sudah nggak dibutuhkan
 rm -f FIRST_INSTALL
 
-# lanjut ke perintah bawaan image php:apache
 exec docker-php-entrypoint apache2-foreground
