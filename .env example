@@ -1,0 +1,7 @@
+DB_NAME=isi-nama-database
+DB_USER=isi-username-database
+DB_PASSWORD=isi-password-database
+DB_ROOT_PASSWORD=isi-password-root
+TYPO3_ADMIN_USER=isi-username-admin
+TYPO3_ADMIN_PASSWORD=Contoh-Password123!
+TYPO3_ADMIN_EMAIL=admin@example.com
