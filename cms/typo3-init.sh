@@ -1,7 +1,4 @@
 #!/bin/sh
-# Init script container cms (TYPO3 13, classic mode)
-# Boot pertama    : install TYPO3 otomatis via CLI (tanpa wizard browser)
-# Boot berikutnya : settings.php sudah ada di volume, langsung start Apache
 set -e
 cd /var/www/html
 
